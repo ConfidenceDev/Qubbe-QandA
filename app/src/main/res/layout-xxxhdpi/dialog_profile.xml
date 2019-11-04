@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/display_340dp"
+    android:layout_height="@dimen/display_320dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/display_32dp"
+    android:layout_marginTop="@dimen/display_40dp"
+    android:layout_marginEnd="@dimen/display_32dp"
+    android:layout_marginBottom="@dimen/display_40dp"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/display_2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog"
+        android:padding="@dimen/display_8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/display_8dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="@dimen/display_4dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialogProfImage"
+                android:layout_width="@dimen/display_130dp"
+                android:layout_height="@dimen/display_130dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/closeDialogBtn"
+                android:layout_width="@dimen/display_40dp"
+                android:layout_height="@dimen/display_40dp"
+                android:layout_marginTop="@dimen/display_8dp"
+                android:src="@mipmap/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/display_4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/dialogName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/display_24sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="@dimen/display_2dp"/>
+
+            <TextView
+                android:id="@+id/dialogLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/display_8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/display_4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/display_22sp"
+                android:drawableStart="@mipmap/location_wh"
+                android:layout_marginBottom="@dimen/display_12dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

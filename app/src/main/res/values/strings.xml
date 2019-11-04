@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name" translatable="false">Qubbe</string>
+    <string name="store_url" translatable="false">https://play.google.com/store/apps/details?id=live.qubbe.android</string>
+    <string name="web_add" translatable="false">https://www.qubbe.live</string>
+	
+	<!-- Not necessary-->
+    <string name="server_client_id" translatable="false">/*Firebase web client ID form Authentication*/</string>
+
+    <string name="version">Qubbe version 1.0.0</string>
+    <string name="invite_header">QUBBE APP INVITE</string>
+    <string name="invite_message">See my stories and special moments</string>
+    <string name="send_a_mail">Send a mail</string>
+    <string name="no_client">You don\'t have any email client</string>
+    <string name="sign_out_message">Are you sure you want to sign out?</string>
+    <string name="delete_header">Are you sure you want to delete account?</string>
+    <string name="delete_subject">REQUEST TO DELETE ACCOUNT (QUBBE APP)</string>
+    <string name="delete_message">Message:</string>
+    <string name="feedback_message">Message:</string>
+    <string name="share_app_using">Share app using</string>
+    <string name="feedback_header">FEEDBACK FROM QUBBE APP</string>
+    <string name="delete_response">Delete response?</string>
+    <string name="deleted">Deleted!</string>
+    <string name="your_account">Your account!</string>
+
+    <string name="just_now">just now</string>
+    <string name="a_minute">a minute ago</string>
+    <string name="minutes">minutes ago</string>
+    <string name="an_hour">an hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="days_ago">days ago</string>
+
+    <string name="request_permission_failed">Request Permission Failed!</string>
+
+    <string name="media_formats">Media formats: jpg(jpeg), png, mp4, mpeg, 3gp and avi</string>
+    <string name="help1">1. HOW TO USE: Using Qubbe app is easy, simply navigate to the new post page, type in your question, click on the continue button and your post goes live.\n\n</string>
+    <string name="help2">2. CONTRIBUTORS: Get ranked among the top 10 top contributors simply by responding to questions asked by users.\n\n</string>
+    <string name="help3">3. Send us a mail for bug reports, suggestions, complaints, inquiries and
+        feedback, see settings page.</string>
+
+    <string name="not_available">Not available yet.</string>
+    <string name="text">Message: Try out the new and secure cloud storage</string>
+    <string name="send_mail">Send a Mail</string>
+    <string name="ver">Qubbe version 1.1.0"</string>
+    <string name="feedback_text">FEEDBACK FROM QUBBE APP</string>
+    <string name="message">Message: </string>
+    <string name="sign_out_text">Are you sure you want to sign out?</string>
+    <string name="delete_acc_text">Are you sure you want to delete your account?</string>
+    <string name="cancel_upload">Cancel Upload?</string>
+    <string name="error">Error: Something went wrong, try again.</string>
+    <string name="username_exist">Username already exists.</string>
+    <string name="not_complete">You need a name and a profile picture.</string>
+    <string name="err">Error:</string>
+    <string name="saved">Saved successfully!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="k">k</string>
+    <string name="m">m</string>
+    <string name="b">b</string>
+    <string name="t">t</string>
+    <string name="q">q</string>
+    <string name="u">u</string>
+
+    <string name="internet_continue">You need Mobile Data or wifi connection to continue.</string>
+    <string name="dollar_sign">$</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry">Expiry</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_name">Card Holder Name</string>
+    <string name="pay">Pay</string>
+    <string name="yy">YY</string>
+    <string name="expiry_month">MM</string>
+    <string name="email">Email</string>
+    <string name="required">Required.</string>
+    <string name="transaction_success">Transaction Successful! payment reference:</string>
+    <string name="transaction_err">Transaction failed: </string>
+    <string name="transaction_failed">Transaction failed, something went wrong, try again.</string>
+    <string name="request_err">Error sending payment reference to server</string>
+    <string name="card_valid">Card is Valid</string>
+    <string name="card_not_valid">Card not Valid</string>
+    <string name="cancel_payment">Payment will be canceled</string>
+    <string name="to_pay">To pay:</string>
+
+    <string name="get_started_text">Box your questions and offer your opinions. \n Find an Answer</string>
+    <string name="by_signing_in_you_agree_to_our">By signing in you agree to our</string>
+    <string name="google_account">Google Account</string>
+
+    <string name="science" translatable="false">Science</string>
+    <string name="tech" translatable="false">Tech</string>
+    <string name="music" translatable="false">Music</string>
+    <string name="programming" translatable="false">Programming</string>
+    <string name="lifestyle" translatable="false">Lifestyle</string>
+    <string name="art" translatable="false">Art</string>
+    <string name="nature" translatable="false">Nature</string>
+    <string name="sports" translatable="false">Sports</string>
+    <string name="business" translatable="false">Business</string>
+    <string name="education" translatable="false">Education</string>
+    <string name="movies" translatable="false">Movies</string>
+    <string name="urban" translatable="false">Urban</string>
+    <string name="entertainment" translatable="false">Entertainment</string>
+    <string name="games" translatable="false">Games</string>
+    <string name="romance" translatable="false">Romance</string>
+    <string name="more" translatable="false">More</string>
+    <string name="others" translatable="false">Others</string>
+
+    <string name="stack">Stack</string>
+    <string name="stack_text">Push your question card to the top of the card stack for only </string>
+    <string name="post">Post</string>
+    <string name="push">Push</string>
+    <string name="no_category">No category selected!</string>
+    <string name="post_created">Post Created!</string>
+    <string name="no_question">Write a question</string>
+    <string name="wait">Wait</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_uploads">You\'ve not asked any question!</string>
+    <string name="post_removed">This post has been removed</string>
+    <string name="be_the_first_to_respond">Be the first to respond</string>
+    <string name="not_typed">You\'ve not written anything</string>
+    <string name="sent">Sent!</string>
+    <string name="contributed">Contributed</string>
+    <string name="times">times</string>
+
+
+    <string name="about">About</string>
+    <string name="tell_a_friend">Tell a Friend</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="send_us_a_feedback">Send us a Feedback</string>
+    <string name="license">License</string>
+    <string name="terms_amp_policy"><![CDATA[Terms & Policy]]></string>
+    <string name="help">Help</string>
+    <string name="home">home</string>
+    <string name="settings">Settings</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="ok">OK</string>
+    <string name="finish">Finish</string>
+
+    <string name="comments">Comments</string>
+    <string name="comment">Comment</string>
+    <string name="write">Write…</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="save">Save</string>
+    <string name="username">Username</string>
+    <string name="location">Location</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="website">Website</string>
+    <string name="cards">Cards</string>
+    <string name="my_posts">My Posts</string>
+    <string name="new_post">New Post</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="likes">Likes</string>
+    <string name="like">Like</string>
+    <string name="delete">Delete</string>
+    <string name="no_content_found">No content found!</string>
+    <string name="new_ques_hint">Start with e.g: What, Who, How etc…</string>
+    <string name="new_ans_hint">Answer e.g: To draw blood :)</string>
+    <string name="continue_txt">Continue</string>
+    <string name="answer">Answer</string>
+    <string name="reveal">Reveal</string>
+    <string name="show">Show</string>
+    <string name="collapse">Collapse</string>
+    <string name="see_profile">See Profile</string>
+    <string name="search">Search…</string>
+    <string name="_0_150">0/150</string>
+    <string name="response">Response</string>
+    <string name="info">Info</string>
+    <string name="questions">Questions</string>
+    <string name="menu">Menu</string>
+    <string name="top_contributors">Top Contributors</string>
+    <string name="facebook_name">Facebook Name E.g: John Joe</string>
+    <string name="instagram_name">Instagram Name</string>
+    <string name="twitter_name">Twitter Name</string>
+    <string name="no_contributors_yet">No Contributors Yet.</string>
+    <string name="no_questions">That\'s the last of it!</string>
+    <string name="no_question_found">No question found!</string>
+    <string name="no_quest">No questions yet!</string>
+    <string name="type_question">Find question.</string>
+    <string name="flag_as_inappropriate">Flag as inappropriate</string>
+    <string name="flag_msg">Flag this question as inappropriate</string>
+    <string name="flag_sent">Flag sent!</string>
+    <string name="delete_post">Delete post?</string>
+
+    <!-- ======================================== Terms Start ========================================= -->
+    <string name="legalText">Legal: By signing in with Google Account, I hereby agree to the ‘Qubbe’ app terms and conditions 2019.</string>
+    <string name="privacyText">PRIVACY POLICY \n\n
+            1. COLLECTION OF INFORMATION</string>
+    <string name="collectionText">We collect information such as usage statistics from your use of the app, the creation of your account and any communications with ourselves. \n
+        This information collected includes your personal data such as your name and email address. Any information you choose to provide will be collected via the app.
+ </string>
+
+    <string name="deviceInfo">DEVICE INFORMATION WE COLLECT: \n\n
+Log information: Information regarding your use of the app on your device is stored including access times, your IP address and how you’ve interacted with our platform.
+Hardware Information: We collect information about your mobile device used to access our product. This includes: Your operating system and version and network information.
+Location Information: The app uses location information to provide a better experience this data is stored from your device each time you choose to use location services within the app.
+ </string>
+
+    <string name="useOfInfo">2. USE OF INFORMATION:</string>
+    <string name="useOfInfoText">We use information collected from you to improve and protect the Qubbe\'s platform and it’s users. \n
+
+            User queries and discussion
+            We may also use information about you when: \n
+- Responding to your comments, questions and requests regarding the services provided by Qubbe.
+- Send you information, updates and support with your permission
+- Communicate with you about products, services and information offered by us.</string>
+
+
+    <string name="sharingInfo">3. SHARING INFORMATION: \n\n
+We do not share any of your information without your consent. This information may be used to improve the platform but will not be sent to any third-party service providers.
+The product may implement sharing features across social media platforms and services. The services use of this information will be governed by their own privacy policies and conditions.
+</string>
+
+    <string name="security">4. SECURITY: \n\n
+ We are concerned with the security of all transactions made within our app that is why our payment platform are encrypted for safe transactions and
+        card details are not saved, shared or revealed to any third party before or after any payment.
+    </string>
+
+    <string name="yourChoices">5. YOUR CHOICES: \n\n
+We would like to remind the user that the way they use the platform must adhere to our use policies and that you may be liable for any misconduct. If you do not wish to adhere to the policies outlined in this documentation.
+        Email stackdriveinc@gmail.com to deactivate your account.
+These policies are subject to status and may be changed in the future when this occurs the app will be updated with the changes outlined. \n\n
+
+USE POLICES: \n\n
+Any unlawful use of the app will be notified to local police services to be further investigated. Your personal information and service data will be given.
+We may modify, suspend or terminate your account if, in our sole discretion we decide that you have violated the policies or guidelines that are part of this agreement, or to protect the platform and its users.
+Any fees or payments made to the platform currently (or in the future) are paid by you the user and any queries regarding payments will be handled individually depending on outlined circumstances.</string>
+
+    <!-- ======================================== Terms Ends Here ========================================= -->
+
+    <!-- ======================================== License Start ========================================= -->
+    <string name="thirdPartyText">THIRD PARTY LIBRARY LICENSES APPRECIATION: \n\n
+        Special thanks goes to these free and/or open-source software libraries (FOSS) used in production of ‘Qubbe’ app Android.</string>
+    <string name="third1">1. BUMPTECH GLIDE LIB: Image Loading Framework </string>
+    <string name="third2">2. ARTHUR-HUB CROPPER LIB: Image Cropper</string>
+    <string name="third3">3. HDODENHOF IMAGEVIEW LIB: Circle Images</string>
+    <string name="third4">4. CHRISJENX CALLIGRAPHY LIB: Text Font</string>
+    <string name="third5">5. INTUIT SDP LIB: Scalable Display</string>
+    <string name="third6">6. BCLOGIC PULSATOR LIB: Pulse View</string>
+    <string name="third7">7. YUYAKAIDO CARD STACK LIB: Card Swipe</string>
+
+    <string name="generalLicense">GENERAL LIB LICENSE: </string>
+    <string name="third8">Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at \n\n
+
+          http://www.apache.org/licenses/LICENSE-2.0 \n\n
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.</string>
+
+</resources>

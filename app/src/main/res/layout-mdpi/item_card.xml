@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/postCardView">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomCard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/display_8dp"
+        android:layout_marginBottom="@dimen/display_1dp"
+        android:layout_marginEnd="@dimen/display_8dp"
+        android:layout_marginStart="@dimen/display_8dp"
+        app:cardCornerRadius="@dimen/display_3dp"
+        app:cardElevation="@dimen/display_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/display_8dp">
+
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/display_18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/display_8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/cardUserImgRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cardUserImg"
+                android:layout_width="@dimen/display_50dp"
+                android:layout_height="@dimen/display_50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_dark_text"
+            android:textSize="@dimen/display_18sp"
+            app:layout_constraintStart_toEndOf="@+id/categoryText"
+            app:layout_constraintEnd_toStartOf="@+id/cardUserImgRel"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/display_8dp"
+            android:layout_marginEnd="@dimen/display_8dp"
+            android:gravity="end"/>
+
+        <RelativeLayout
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/display_1dp"
+            android:background="@color/grey200"
+            app:layout_constraintTop_toBottomOf="@+id/cardUserImgRel"
+            app:layout_constraintEnd_toEndOf="@id/cardUserImgRel"
+            app:layout_constraintStart_toStartOf="@id/categoryText"
+            android:layout_marginTop="@dimen/display_8dp"/>
+
+        <TextView
+            android:id="@+id/questionArea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:gravity="center"
+            android:textColor="@color/primary_dark_text"
+            android:textSize="@dimen/display_20sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/display_8dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/display_8dp"
+        android:layout_marginEnd="@dimen/display_8dp"
+        android:layout_marginStart="@dimen/display_8dp"
+        app:cardCornerRadius="@dimen/display_3dp"
+        app:cardElevation="@dimen/display_3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:padding="@dimen/display_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/likesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_dark_text"
+                    android:textSize="@dimen/display_20sp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/display_2dp"/>
+
+                <ImageView
+                    android:id="@+id/likeBtn"
+                    android:layout_width="@dimen/display_28dp"
+                    android:layout_height="@dimen/display_28dp"
+                    android:src="@mipmap/like"
+                    android:layout_marginStart="@dimen/display_8dp"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/responseCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_dark_text"
+                    android:textSize="@dimen/display_20sp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/display_2dp"/>
+
+                <ImageView
+                    android:id="@+id/responseBtn"
+                    android:layout_width="@dimen/display_28dp"
+                    android:layout_height="@dimen/display_28dp"
+                    android:src="@mipmap/comment"
+                    android:layout_marginStart="@dimen/display_8dp"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/flagBtn"
+                    android:layout_width="@dimen/display_28dp"
+                    android:layout_height="@dimen/display_28dp"
+                    android:src="@mipmap/flag"
+                    android:layout_marginStart="@dimen/display_8dp"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_science"
+        android:icon="@drawable/science"
+        android:orderInCategory="1"
+        android:title="@string/science" />
+
+    <item
+        android:id="@+id/action_tech"
+        android:icon="@drawable/tech"
+        android:orderInCategory="2"
+        android:title="@string/tech" />
+
+    <item
+        android:id="@+id/action_music"
+        android:icon="@drawable/music"
+        android:orderInCategory="3"
+        android:title="@string/music" />
+
+    <item
+        android:id="@+id/action_programming"
+        android:icon="@drawable/programming"
+        android:orderInCategory="4"
+        android:title="@string/programming" />
+
+    <item
+        android:id="@+id/action_entertainment"
+        android:icon="@drawable/entertainment"
+        android:orderInCategory="5"
+        android:title="@string/entertainment" />
+
+    <item
+        android:id="@+id/action_games"
+        android:icon="@drawable/games"
+        android:orderInCategory="6"
+        android:title="@string/games" />
+
+    <item
+        android:id="@+id/action_art"
+        android:icon="@drawable/art"
+        android:orderInCategory="7"
+        android:title="@string/art" />
+
+    <item
+        android:id="@+id/action_urban"
+        android:icon="@drawable/urban"
+        android:orderInCategory="8"
+        android:title="@string/urban" />
+
+    <item
+        android:id="@+id/action_nature"
+        android:icon="@drawable/nature"
+        android:orderInCategory="9"
+        android:title="@string/nature" />
+
+    <item
+        android:id="@+id/action_sports"
+        android:icon="@drawable/sports"
+        android:orderInCategory="10"
+        android:title="@string/sports" />
+
+    <item
+        android:id="@+id/action_business"
+        android:icon="@drawable/business"
+        android:orderInCategory="11"
+        android:title="@string/business" />
+
+    <item
+        android:id="@+id/action_education"
+        android:icon="@drawable/education"
+        android:orderInCategory="12"
+        android:title="@string/education" />
+
+    <item
+        android:id="@+id/action_movies"
+        android:icon="@drawable/movies"
+        android:orderInCategory="13"
+        android:title="@string/movies" />
+
+    <item
+        android:id="@+id/action_lifestyle"
+        android:icon="@drawable/lifestyle"
+        android:orderInCategory="14"
+        android:title="@string/lifestyle" />
+
+    <item
+        android:id="@+id/action_romance"
+        android:icon="@drawable/romance"
+        android:orderInCategory="15"
+        android:title="@string/romance" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/more"
+        android:orderInCategory="16"
+        android:title="@string/more" />
+
+</menu>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ResponseActivity"
+    android:layout_margin="@dimen/display_8dp"
+    android:background="@color/grey500">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/responseBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/display_4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/responseToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverLay"
+            app:titleTextAppearance="?android:attr/textAppearanceLarge"
+            app:titleTextColor="@color/primary_dark_text">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/display_4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/responseMainCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_dark_text"
+                        android:textSize="@dimen/display_20sp" />
+
+                    <TextView
+                        android:id="@+id/responseHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/display_8dp"
+                        android:text="@string/response"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/display_20sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/responseBarBack"
+                    android:layout_width="@dimen/display_38dp"
+                    android:layout_height="@dimen/display_38dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginEnd="@dimen/display_4dp"
+                    android:src="@mipmap/ic_close_black"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/responseBar">
+
+        <FrameLayout
+            android:id="@+id/responseFrame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/responseCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/responseCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/trans_white"
+            android:paddingTop="@dimen/display_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/display_8dp"
+                android:layout_marginEnd="@dimen/display_8dp"
+                android:layout_marginBottom="@dimen/display_6dp"
+                app:cardElevation="@dimen/display_2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/responseBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/responseField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="@color/white"
+                    android:focusable="true"
+                    android:hint="@string/write"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:maxLines="5"
+                    android:paddingStart="@dimen/display_8dp"
+                    android:paddingTop="@dimen/display_6dp"
+                    android:paddingEnd="@dimen/display_2dp"
+                    android:paddingBottom="@dimen/display_8dp"
+                    android:scrollbarSize="@dimen/display_2dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/primary_dark_text"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="@dimen/display_20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/responseBtn"
+                android:layout_width="@dimen/display_40dp"
+                android:layout_height="@dimen/display_40dp"
+                android:layout_marginTop="@dimen/display_4dp"
+                android:layout_marginEnd="@dimen/display_8dp"
+                android:layout_marginBottom="@dimen/display_6dp"
+                android:src="@mipmap/send"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

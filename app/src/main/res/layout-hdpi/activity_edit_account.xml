@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditAccountActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/editBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/display_4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/editToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverLay"
+            app:titleTextAppearance="?android:attr/textAppearanceLarge"
+            app:titleTextColor="@color/primary_dark_text">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/editBack"
+                    android:layout_width="@dimen/display_38dp"
+                    android:layout_height="@dimen/display_38dp"
+                    android:src="@mipmap/ic_close_black"
+                    android:layout_marginEnd="@dimen/display_8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_account"
+                    android:textSize="@dimen/display_20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBar">
+
+        <RelativeLayout
+            android:id="@+id/profRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginTop="@dimen/display_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profImage"
+                android:layout_width="@dimen/display_120dp"
+                android:layout_height="@dimen/display_120dp"
+                android:src="@drawable/circle_background" />
+
+            <RelativeLayout
+                android:id="@+id/editBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/display_8dp"
+                android:background="@drawable/layout_bg"
+                android:gravity="center"
+                android:padding="@dimen/display_4dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/selectPhoto"
+                    android:layout_width="@dimen/display_26dp"
+                    android:layout_height="@dimen/display_26dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/edit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profRel"
+            app:layout_constraintBottom_toBottomOf="@+id/profRel"
+            app:layout_constraintStart_toEndOf="@+id/profRel"
+            android:padding="@dimen/display_8dp">
+
+            <EditText
+                android:id="@+id/userNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/display_20sp"
+                android:textColor="@color/primary_dark_text"
+                android:hint="@string/username"
+                android:textColorHint="@color/hint_text"
+                android:padding="@dimen/display_8dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="text"
+                android:maxLength="32"
+                android:background="@drawable/edit_box"/>
+
+            <EditText
+                android:id="@+id/locationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/display_20sp"
+                android:textColor="@color/primary_dark_text"
+                android:hint="@string/location"
+                android:textColorHint="@color/hint_text"
+                android:padding="@dimen/display_8dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/display_8dp"
+                android:maxLength="64"
+                android:background="@drawable/edit_box"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/faceField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profRel"
+            android:textSize="@dimen/display_20sp"
+            android:textColor="@color/primary_dark_text"
+            android:hint="@string/facebook_name"
+            android:textColorHint="@color/hint_text"
+            android:padding="@dimen/display_8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/display_8dp"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginEnd="@dimen/display_16dp"
+            android:background="@drawable/edit_box"/>
+
+        <EditText
+            android:id="@+id/instaField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/faceField"
+            android:textSize="@dimen/display_20sp"
+            android:textColor="@color/primary_dark_text"
+            android:hint="@string/instagram_name"
+            android:textColorHint="@color/hint_text"
+            android:padding="@dimen/display_8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/display_8dp"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginEnd="@dimen/display_16dp"
+            android:background="@drawable/edit_box"/>
+
+        <EditText
+            android:id="@+id/twitField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instaField"
+            android:textSize="@dimen/display_20sp"
+            android:textColor="@color/primary_dark_text"
+            android:hint="@string/twitter_name"
+            android:textColorHint="@color/hint_text"
+            android:padding="@dimen/display_8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/display_8dp"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginEnd="@dimen/display_16dp"
+            android:background="@drawable/edit_box" />
+
+        <EditText
+            android:id="@+id/webField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/twitField"
+            android:textSize="@dimen/display_20sp"
+            android:textColor="@color/primary_dark_text"
+            android:hint="@string/website"
+            android:textColorHint="@color/hint_text"
+            android:padding="@dimen/display_8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/display_8dp"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginEnd="@dimen/display_16dp"
+            android:background="@drawable/edit_box"/>
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/editPulse"
+            android:layout_width="@dimen/display_48dp"
+            android:layout_height="@dimen/display_48dp"
+            android:layout_marginStart="@dimen/display_16dp"
+            android:layout_marginBottom="@dimen/display_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:pulse_color="@color/trans_primaryDark"
+            app:pulse_count="4"
+            app:pulse_duration="3000"
+            app:pulse_interpolator="Linear"
+            app:pulse_repeat="0"
+            app:pulse_startFromScratch="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editPulse"
+            android:layout_marginEnd="@dimen/display_42dp"
+            android:layout_marginStart="@dimen/display_42dp"
+            android:layout_marginBottom="@dimen/display_16dp"
+            android:background="@drawable/rounded_btn_primary"
+            android:textAllCaps="false"
+            android:text="@string/save"
+            android:textColor="@color/primary_dark_text"
+            android:textSize="@dimen/display_20sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

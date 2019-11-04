@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NewFragment">
+
+    <include
+        android:id="@+id/listCat"
+        layout="@layout/list_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/charCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listCat"
+        android:textSize="@dimen/display_20sp"
+        android:layout_marginEnd="@dimen/display_16dp"
+        android:text="@string/_0_150"
+        android:layout_marginTop="@dimen/display_4dp"/>
+
+    <EditText
+        android:id="@+id/questionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/display_8dp"
+        android:layout_marginTop="@dimen/display_12dp"
+        android:layout_marginEnd="@dimen/display_8dp"
+        android:layout_marginBottom="@dimen/display_16dp"
+        android:background="@drawable/edit_box"
+        android:gravity="start|top"
+        android:hint="@string/new_ques_hint"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/display_8dp"
+        android:maxLength="150"
+        android:lines="9"
+        android:padding="@dimen/display_8dp"
+        android:textColor="@color/primary_dark_text"
+        android:textColorHint="@color/hint_text"
+        android:textSize="@dimen/display_20sp"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/charCount" />
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/postPulse"
+        android:layout_width="@dimen/display_48dp"
+        android:layout_height="@dimen/display_48dp"
+        android:layout_marginStart="@dimen/display_16dp"
+        android:layout_marginBottom="@dimen/display_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pulse_color="@color/trans_primaryDark"
+        app:pulse_count="4"
+        app:pulse_duration="3000"
+        app:pulse_interpolator="Linear"
+        app:pulse_repeat="0"
+        app:pulse_startFromScratch="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postPulse"
+        android:layout_marginEnd="@dimen/display_42dp"
+        android:layout_marginStart="@dimen/display_42dp"
+        android:layout_marginBottom="@dimen/display_16dp"
+        android:background="@drawable/rounded_btn_primary"
+        android:textAllCaps="false"
+        android:text="@string/continue_txt"
+        android:textColor="@color/primary_dark_text"
+        android:textSize="@dimen/display_18sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
