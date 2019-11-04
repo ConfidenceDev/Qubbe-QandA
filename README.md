@@ -1,9 +1,8 @@
 # Qubbe-QandA
 Qubbe is an open source Swipe card Question and Answer Forum App.
  
-![alt text][logo]
-[logo]: https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png "Logo"
-
+<!--![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png "1") -->
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png" width="148">
 
 # ScreenShots
 ![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png "1")
