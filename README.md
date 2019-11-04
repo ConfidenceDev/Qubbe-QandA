@@ -5,13 +5,13 @@ Qubbe is an open source Swipe card Question and Answer Forum App.
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png" width="148">
 
 # ScreenShots
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png "1")
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/2.png "2")
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/3.png "3")
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/4.png "4")
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/5.png "5")
-![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/6.png "6")
-
+<!--![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png "1") -->
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png" width="148">
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/2.png" width="148">
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/3.png" width="148">
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/4.png" width="148">
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/5.png" width="148">
+<img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/6.png " width="148">
 
 # How to Use
 * Create a Firebase project if you don't have one already
