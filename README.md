@@ -22,7 +22,7 @@ Qubbe is an open source Swipe card Question and Answer Forum App.
 
 # Download App
 <a href="https://play.google.com/store/apps/details?id=live.qubbe.android">
-<img border="0" alt="AppLink" src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/play_btn.png" width="148">
+<img border="0" alt="AppLink" src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/play_btn.png" width="240" target="_blank">
 </a>
  
 
