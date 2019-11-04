@@ -1,6 +1,6 @@
 # Qubbe-QandA
 Qubbe is an open source Swipe card Question and Answer Forum App.
- 
+
 <!--![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png "1") -->
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/icon.png" width="148">
 
@@ -19,6 +19,12 @@ Qubbe is an open source Swipe card Question and Answer Forum App.
 * Clone or download source zip file
 * Paystack payment platform was used but you can use any payment gateway you like
 * If Paystack obtain public test key and Add to manifest
+
+# Download App
+<a href="https://play.google.com/store/apps/details?id=live.qubbe.android">
+<img border="0" alt="App Link" src="" width="100" height="100">
+</a>
+ 
 
 # Contact
 For inquires, support, bug reports and suggestions send me a mail@: confidostic3@gmail.com
