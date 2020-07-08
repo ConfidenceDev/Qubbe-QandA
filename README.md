@@ -6,12 +6,14 @@ Qubbe is an open source Swipe card Question and Answer Forum App.
 
 # ScreenShots
 <!--![alt text](https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png "1") -->
+<p float="left">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/1.png" width="148">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/2.png" width="148">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/3.png" width="148">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/4.png" width="148">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/5.png" width="148">
 <img src="https://github.com/Dev-Geek/Qubbe-QandA/blob/master/screenshots/6.png " width="148">
+</p>
 
 # How to Use
 * Create a Firebase project if you don't have one already
