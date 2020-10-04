@@ -32,5 +32,5 @@ Qubbe is an open source Swipe card Question and Answer Forum App.
 For inquires, support, bug reports and suggestions send me a mail@: confidostic3@gmail.com
 
 * Facebook: Onisofien Eze
-* Twitter: @Onisofien1
-* Instagram: Onisofien
+* Twitter: @OnisofienGeek
+* Instagram: @onisofien.dev
